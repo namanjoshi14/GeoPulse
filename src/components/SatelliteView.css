@@ -1,0 +1,55 @@
+.satellite-view {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.satellite-view-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.satellite-list-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Important for proper scrolling */
+}
+
+.satellite-details-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Important for proper scrolling */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .satellite-view {
+    padding: 1.5rem;
+  }
+
+  .satellite-view-content {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .satellite-view {
+    padding: 1rem;
+  }
+
+  .satellite-view-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .satellite-list-column {
+    max-height: 300px;
+  }
+}

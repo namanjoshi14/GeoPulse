@@ -1,0 +1,31 @@
+.map-view-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.map-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.details-section {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .map-view-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1rem;
+  }
+
+  .map-section,
+  .details-section {
+    height: 400px;
+  }
+}

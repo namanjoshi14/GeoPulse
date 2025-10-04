@@ -1,0 +1,31 @@
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.typewriter-wrapper {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #e5e7eb;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+.typewriter-cursor {
+  color: #00ff00;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
